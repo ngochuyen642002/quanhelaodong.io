@@ -5,144 +5,149 @@
   <title>CV - Trần Thị Ngọc Huyền</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ecf0f1;
-      padding: 30px;
+      background-color: #f0f2f5;
+      color: #333;
     }
-    .cv {
-      max-width: 900px;
-      margin: auto;
+    .cv-wrapper {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
       background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    .header {
-      background-color: #34495e;
+    .cv-sidebar {
+      background-color: #2c3e50;
       color: white;
-      padding: 30px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
+      padding: 30px 20px;
+      width: 300px;
+      flex-shrink: 0;
     }
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #fff;
+    .cv-sidebar img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
-    .header-info {
-      flex: 1;
-    }
-    .header-info h1 {
-      font-size: 32px;
+    .cv-sidebar h2 {
+      font-size: 22px;
       margin-bottom: 10px;
     }
-    .header-info p {
-      font-size: 16px;
-      color: #bdc3c7;
-    }
-    .info {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 30px;
-      background-color: #f7f9fa;
-      border-bottom: 1px solid #e1e1e1;
-    }
-    .info div {
-      width: 48%;
-    }
-    .section {
-      padding: 25px 30px;
-    }
-    .section h2 {
-      font-size: 20px;
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
-    }
-    .section p, .section li {
-      font-size: 15px;
-      color: #2d3436;
+    .cv-sidebar p {
+      font-size: 14px;
       line-height: 1.6;
     }
-    ul {
-      list-style: disc;
-      margin-left: 20px;
+    .cv-sidebar .section {
+      margin-top: 30px;
+    }
+    .cv-sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .cv-sidebar ul li {
+      margin-bottom: 10px;
+    }
+    .cv-content {
+      padding: 40px;
+      flex-grow: 1;
+    }
+    .cv-content h1 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .cv-content .job-title {
+      color: #e67e22;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .cv-content .section {
+      margin-bottom: 30px;
+    }
+    .cv-content .section h3 {
+      color: #e67e22;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .cv-content p, .cv-content li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .cv-content ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="cv">
-    <div class="header">
-      <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
-      <div class="header-info">
-        <h1>Trần Thị Ngọc Huyền</h1>
-        <p>Trợ lý/ nhân viên thống kê | Tốt nghiệp Công nghệ Thông tin</p>
+  <div class="cv-wrapper">
+    <div class="cv-sidebar">
+      <img src="avatar.jpg" alt="Ảnh đại diện">
+      <h2>Trần Thị Ngọc Huyền</h2>
+      <p>Nhân viên hành chính</p>
+
+      <div class="section">
+        <h3>Thông tin liên hệ</h3>
+        <ul>
+          <li>📞 0939 643 264</li>
+          <li>✉️ huyenit200x@gmail.com</li>
+          <li>📍 Tiền Giang</li>
+          <li>🎂 06/04/2002</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Kỹ năng</h3>
+        <ul>
+          <li>Tin học văn phòng</li>
+          <li>Làm việc nhóm</li>
+          <li>Chịu áp lực công việc</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Chứng chỉ</h3>
+        <ul>
+          <li>Ứng dụng CNTT cơ bản</li>
+          <li>Nghiệp vụ Sư phạm</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Sở thích</h3>
+        <p>Du lịch, đọc sách, khám phá</p>
       </div>
     </div>
 
-    <div class="info">
-      <div>
-        <p><strong>SĐT:</strong> 0939 643 264</p>
-        <p><strong>Email:</strong> huyenit200x@gmail.com</p>
-        <p><strong>Ngày sinh:</strong> 06/04/2002</p>
+    <div class="cv-content">
+      <h1>Trần Thị Ngọc Huyền</h1>
+      <div class="job-title">Nhân viên hành chính | Tốt nghiệp Công nghệ Thông tin</div>
+
+      <div class="section">
+        <h3>Mục tiêu nghề nghiệp</h3>
+        <p>Tìm kiếm một công việc ổn định trong môi trường làm việc thân thiện, năng động, nơi mọi người hỗ trợ và chia sẻ kinh nghiệm để cùng phát triển và đạt được mục tiêu chung.</p>
       </div>
-      <div>
-        <p><strong>Địa chỉ:</strong> Tiền Giang</p>
-        <p><strong>Trình độ:</strong> Đại học SPKT Vĩnh Long (2020–2024)</p>
-        <p><strong>Xếp loại:</strong> Khá</p>
+
+      <div class="section">
+        <h3>Học vấn</h3>
+        <p>Đại học Sư phạm Kỹ thuật Vĩnh Long (2020 – 2024)<br>Ngành: Công nghệ Thông tin | Xếp loại: Khá</p>
       </div>
-    </div>
 
-    <div class="section">
-      <h2>Mục tiêu nghề nghiệp</h2>
-      <p>Tìm kiếm một công việc ổn định trong môi trường làm việc thân thiện, năng động, nơi mọi người hỗ trợ và chia sẻ kinh nghiệm cùng nhau để phát triển bản thân và đạt được mục tiêu chung của tổ chức.</p>
-    </div>
-
-    <div class="section">
-      <h2>Kinh nghiệm làm việc</h2>
-      <p><strong>Công ty Bodynist Tiền Giang (04/2024 – 03/2025)</strong></p>
-      <ul>
-        <li>Điểm danh, chấm công nhân viên</li>
-        <li>Quản lý báo cơm, nghỉ phép</li>
-        <li>Soạn thảo hồ sơ, báo cáo</li>
-        <li>Lập báo cáo cắt hàng, gửi báo chí nội bộ</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Kỹ năng</h2>
-      <ul>
-        <li>Sử dụng thành thạo tin học văn phòng: Word, Excel, PowerPoint</li>
-        <li>Kỹ năng làm việc nhóm tốt</li>
-        <li>Khả năng chịu áp lực công việc cao</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Ngoại ngữ</h2>
-      <p>Tiếng Anh – Trình độ cơ bản</p>
-    </div>
-
-    <div class="section">
-      <h2>Chứng chỉ</h2>
-      <ul>
-        <li>Chứng chỉ Ứng dụng Công nghệ Thông tin cơ bản</li>
-        <li>Chứng chỉ Nghiệp vụ Sư phạm</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Sở thích</h2>
-      <p>Du lịch, khám phá những địa điểm mới</p>
+      <div class="section">
+        <h3>Kinh nghiệm làm việc</h3>
+        <p><strong>Bodynist Tiền Giang</strong> (04/2024 – 03/2025)</p>
+        <ul>
+          <li>Điểm danh, chấm công nhân viên</li>
+          <li>Báo cơm, quản lý phép, văn bản nhân sự</li>
+          <li>Lập báo cáo cắt hàng và giấy tờ liên quan</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
