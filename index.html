@@ -4,80 +4,117 @@
   <meta charset="UTF-8">
   <title>CV - Trần Thị Ngọc Huyền</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 40px;
-    }
-    .cv-container {
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ecf0f1;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h1, h2 {
-      color: #2c3e50;
+    .cv {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .header {
+      background-color: #34495e;
+      color: white;
+      padding: 30px;
+    }
+    .header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 16px;
+      color: #bdc3c7;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px;
+      background-color: #f7f9fa;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .info div {
+      width: 48%;
     }
     .section {
-      margin-bottom: 25px;
+      padding: 25px 30px;
+    }
+    .section h2 {
+      font-size: 20px;
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+    }
+    .section p, .section li {
+      font-size: 15px;
+      color: #2d3436;
+      line-height: 1.6;
     }
     ul {
-      margin: 0;
-      padding-left: 20px;
+      list-style: disc;
+      margin-left: 20px;
+    }
+    .two-columns {
+      display: flex;
+      justify-content: space-between;
+    }
+    .two-columns > div {
+      width: 48%;
     }
   </style>
 </head>
 <body>
-  <div class="cv-container">
-    <h1>TRẦN THỊ NGỌC HUYỀN</h1>
-    <p><strong>Chức danh:</strong> Nhân viên</p>
+  <div class="cv">
+    <div class="header">
+      <h1>Trần Thị Ngọc Huyền</h1>
+      <p>Nhân viên hành chính | Tốt nghiệp Công nghệ Thông tin</p>
+    </div>
 
-    <div class="section">
-      <h2>Thông tin liên hệ</h2>
-      <p><strong>Số điện thoại:</strong> 0939 643 264</p>
-      <p><strong>Email:</strong> huyenit200x@gmail.com</p>
-      <p><strong>Ngày sinh:</strong> 06/04/2002</p>
-      <p><strong>Địa chỉ:</strong> Tiền Giang</p>
+    <div class="info">
+      <div>
+        <p><strong>SĐT:</strong> 0939 643 264</p>
+        <p><strong>Email:</strong> huyenit200x@gmail.com</p>
+        <p><strong>Ngày sinh:</strong> 06/04/2002</p>
+      </div>
+      <div>
+        <p><strong>Địa chỉ:</strong> Tiền Giang</p>
+        <p><strong>Trình độ:</strong> Đại học SPKT Vĩnh Long (2020–2024)</p>
+        <p><strong>Xếp loại:</strong> Khá</p>
+      </div>
     </div>
 
     <div class="section">
       <h2>Mục tiêu nghề nghiệp</h2>
-      <p>Có một công việc ổn định trong môi trường làm việc vui vẻ, năng động và thân thiện. Mọi người cùng chia sẻ, hỗ trợ và giúp đỡ lẫn nhau, trao đổi kiến thức và kinh nghiệm để đạt được mục tiêu chung.</p>
-    </div>
-
-    <div class="section">
-      <h2>Trình độ học vấn</h2>
-      <p><strong>2020 – 2024:</strong> Trường Đại học Sư phạm Kỹ thuật Vĩnh Long</p>
-      <p>Ngành: Công nghệ Thông tin</p>
-      <p>Xếp loại bằng tốt nghiệp: Khá</p>
+      <p>Tìm kiếm một công việc ổn định trong môi trường làm việc thân thiện, năng động, nơi mọi người hỗ trợ và chia sẻ kinh nghiệm cùng nhau để phát triển bản thân và đạt được mục tiêu chung của tổ chức.</p>
     </div>
 
     <div class="section">
       <h2>Kinh nghiệm làm việc</h2>
-      <p><strong>Công ty Bodynist Tiền Giang</strong> (04/2024 – 03/2025)</p>
+      <p><strong>Công ty Bodynist Tiền Giang (04/2024 – 03/2025)</strong></p>
       <ul>
-        <li>Điểm danh, chấm công</li>
-        <li>Báo cơm, quản lý nghỉ phép</li>
-        <li>Soạn thảo văn bản, báo cáo nhân sự</li>
-        <li>Báo cáo cắt hàng</li>
+        <li>Điểm danh, chấm công nhân viên</li>
+        <li>Quản lý báo cơm, nghỉ phép</li>
+        <li>Soạn thảo hồ sơ, báo cáo</li>
+        <li>Lập báo cáo cắt hàng, gửi báo chí nội bộ</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Kỹ năng</h2>
       <ul>
-        <li>Tin học văn phòng</li>
-        <li>Làm việc nhóm</li>
-        <li>Chịu được áp lực công việc</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Phần mềm sử dụng</h2>
-      <ul>
-        <li>Microsoft Word, Excel, PowerPoint</li>
+        <li>Sử dụng thành thạo tin học văn phòng: Word, Excel, PowerPoint</li>
+        <li>Kỹ năng làm việc nhóm tốt</li>
+        <li>Khả năng chịu áp lực công việc cao</li>
       </ul>
     </div>
 
@@ -89,14 +126,14 @@
     <div class="section">
       <h2>Chứng chỉ</h2>
       <ul>
-        <li>Ứng dụng Công nghệ Thông tin cơ bản</li>
+        <li>Chứng chỉ Ứng dụng Công nghệ Thông tin cơ bản</li>
         <li>Chứng chỉ Nghiệp vụ Sư phạm</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Sở thích</h2>
-      <p>Thích đi du lịch</p>
+      <p>Du lịch, khám phá những địa điểm mới</p>
     </div>
   </div>
 </body>
