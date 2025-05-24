@@ -26,12 +26,25 @@
       background-color: #34495e;
       color: white;
       padding: 30px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
-    .header h1 {
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+    .header-info {
+      flex: 1;
+    }
+    .header-info h1 {
       font-size: 32px;
       margin-bottom: 10px;
     }
-    .header p {
+    .header-info p {
       font-size: 16px;
       color: #bdc3c7;
     }
@@ -64,20 +77,16 @@
       list-style: disc;
       margin-left: 20px;
     }
-    .two-columns {
-      display: flex;
-      justify-content: space-between;
-    }
-    .two-columns > div {
-      width: 48%;
-    }
   </style>
 </head>
 <body>
   <div class="cv">
     <div class="header">
-      <h1>Trần Thị Ngọc Huyền</h1>
-      <p>Nhân viên hành chính | Tốt nghiệp Công nghệ Thông tin</p>
+      <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+      <div class="header-info">
+        <h1>Trần Thị Ngọc Huyền</h1>
+        <p>Nhân viên hành chính | Tốt nghiệp Công nghệ Thông tin</p>
+      </div>
     </div>
 
     <div class="info">
